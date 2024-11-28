@@ -1,0 +1,142 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}  
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE-2016-CE}
+\author{AI24BTECH11025-P.L.Kushal}
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=40]
+
+\item The porosity  $n$  and the degree of saturation $S$ of a soil sample are 0.7 and $40\%$, respectively. In a $100 \, \text{m}^3$ volume of the soil, the volume (expressed in $m^3$) of air is \underline{\hspace{2cm}}.\\
+\item A homogeneous gravity retaining wall supporting a cohesionless backfill is shown in the figure. The lateral active earth pressure at the bottom of the wall is 40 kPa. 
+
+
+\input{figs/fig1}
+
+
+
+
+
+The minimum weight of the wall (expressed in kN per m length) required to prevent it from overturning about its toe (Point P) is  
+\begin{multicols}{4}
+\begin{enumerate}
+\item 120 
+\item 180
+\item 240
+\item 360
+\end{enumerate} 
+\end{multicols}
+
+
+
+
+\item An undisturbed soil sample was taken from the middle of a clay layer (i.e., 1.5 m below GL), as shown in figure. The water table was at the top of clay layer. Laboratory test results are as follows:\\
+\begin{flushleft}
+    \begin{tabbing}
+        \hspace*{3cm}\=\hspace*{4cm}\=\kill
+        Natural water content of clay \> : \> 25\% \\
+        Preconsolidation pressure of clay \> : \> 60 kPa \\
+        Compression index of clay \> : \> 0.50 \\
+        Recompression index of clay \> : \> 0.05 \\
+        Specific gravity of clay \> : \> 2.70 \\
+        Bulk unit weight of sand \> : \> 17 kN/m$^3$ \\
+    \end{tabbing}
+\end{flushleft}A compacted fill of 2.5 m height with unit weight of 20 kN/m$^3$ is placed at the ground level.
+% diagram comes here
+
+\input{figs/fig2}
+
+ Assuming unit weight of water as 10 kN/m$^3$, the ultimate consolidation settlement (expressed in mm) of the clay layer is \underline{\hspace{3cm}}.\\
+\item A seepage flow condition is shown in the figure. The saturated unit weight of the soil $\gamma_{\text{sat}} = 18 \, \text{kN/m}^3$. Using unit weight of water, $\gamma_w = 9.81 \, \text{kN/m}^3$, the effective vertical stress (expressed in kN/m$^2$) on plane X-X is \underline{\hspace{2cm}}.\\
+
+\input{figs/fig3}
+\item A drained triaxial compression test on a saturated clay yielded the effective shear strength parameters as $c' = 15 \, \text{kPa}$ and $\phi' = 22^\circ$. Consolidated Undrained triaxial test on an identical sample of this clay at a cell pressure of 200 kPa developed a pore water pressure of 150 kPa at failure. The deviator stress (expressed in kPa) at failure is \underline{\hspace{2cm}}.\\
+
+\item A concrete gravity dam section is shown in the figure. Assuming unit weight of water as 10 kN/m$^3$ and unit weight of concrete as 24 kN/m$^3$, the uplift force per unit length of the dam (expressed in kN/m) at PQ is \underline{\hspace{2cm}}.\\
+
+\input{figs/fig4}
+\item Seepage is occurring through a porous media shown in the figure. The hydraulic conductivity values $k_1, k_2, k_3$ are in m/day. The seepage discharge (m$^3$/day per m) through the porous media at section PQ is  
+
+\input{figs/fig5}
+
+\begin{multicols}{4}
+\begin{enumerate}
+\item $\frac{7}{12}$
+\item $\frac{1}{2}$
+\item $\frac{9}{16}$
+\item $\frac{3}{4}$
+\end{enumerate} 
+\end{multicols}
+
+\item A 4 m wide rectangular channel, having bed slope of 0.001 carries a discharge of 16 m$^3$/s. Considering Manning's roughness coefficient = 0.012 and $g = 10 \, \text{m/s}^2$, the category of the channel slope is  (A) horizontal   (B) mild   (C) critical   (D) steep.
+\begin{multicols}{4}
+\begin{enumerate}
+\item horizontal
+\item mild
+\item critical
+\item steep
+\end{enumerate} 
+\end{multicols}
+\item A sector gate is provided on a spillway as shown in the figure. Assuming $g = 10 \, \text{m/s}^2$, the resultant force per meter length (expressed in kN/m) on the gate will be \underline{\hspace{2cm}}.\\
+
+\input{figs/fig6}
+\item A hydraulically efficient trapezoidal channel section has a uniform flow depth of 2 m. The bed width (expressed in m)\\
+
+\item Effluent from an industry 'A' has a pH of 4.2. The effluent from another industry 'B' has double the hydroxyl (OH) ion concentration than the effluent from industry 'A'. pH of effluent from the industry 'B' will be \underline{\hspace{3cm}}.\\
+
+\item An electrostatic precipitator (ESP) with $5600 m^{2}$ of collector plate area is 96 percent efficient in treating 185 m$^{3}$/s of flue gas from a 200 MW thermal power plant. It was found that in order to achieve 97 percent efficiency, the collector plate area should be 6100 m$^{2}$. In order to increase the efficiency to 99 percent, the ESP collector plate area (expressed in m$^{2}$) would be \underline{\hspace{3cm}}.\\
+
+\item The 2-day and 4-day BOD values of a sewage sample are 100 mg/L and 155 mg/L, respectively. The value of BOD rate constant (expressed in per day) is \underline{\hspace{3cm}}. \\
+
+\end{enumerate}
+\end{document}
